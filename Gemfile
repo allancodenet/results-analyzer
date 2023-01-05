@@ -67,3 +67,14 @@ group :development do
   # gem "spring"
 end
 
+
+# Thirdparty gems
+gem 'devise'
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+  gem 'factory_bot_rails'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+end
